@@ -1,13 +1,16 @@
 public class Main {
     public static void main(String[] args) {
+        double account = 100.00;
+        double refill = 5000.00;
+        int divider = 100;
+        int bonus;
+        if (refill > 1000) {
+            bonus = (int) refill / divider;
+        } else {
+            bonus = 0;
+        }
+        System.out.println("Итоговый счёт: " + (account + refill + bonus));
+        System.out.println("Итоговый бонус: " + bonus);
 
-        // Объявляете переменные для входных данных и
-        // параметров программы: начального счёта,
-        // суммы пополнения и тп
-
-        // Условным оператором проверяете превысила ли
-        // сумма пополнения порог и для этих двух разных
-        // сценариев рассчитываете сумму бонуса и выводите
-        // на экран.
     }
 }
